@@ -1,0 +1,214 @@
+:root{
+    --primary-color: #fff;
+    --primary-subtle-color: #999;
+    --bg-color: #000;
+    --bg-faded-color: #222;
+    --border-color: #3a3a3a;
+}
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    
+}
+ul{
+    padding: 0px!important;
+}
+.menu-1{
+    background-color: #252323;
+    width: 100%;
+    height: 60px;
+}
+main, .content{
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+}
+.logo{
+    max-width: 100%;
+    float: left;
+    align-self: center;
+    height: 100%;
+    cursor: pointer;
+    padding: 5px 10px 0 0;
+    margin: 0 10px 0 0;
+}
+.menu-dropdown ul li {
+    position: relative;
+    display: inline-block;
+    padding: 0 20px 0 0;
+    margin: 0 10px 0 0;
+    cursor: pointer;
+    font-weight: 300;
+    padding-right: 5px;
+}
+.menu-dropdown{
+    margin-top: 5px;
+    width: 63%;
+    float: left;
+    cursor: pointer;
+    align-self: center;
+}
+.dropdown-button, .dropdown-button--link{
+    width: auto;
+    padding: 0;
+    border: 0;
+    margin: 0;
+    background-color: transparent;
+    color: var(--primary-color);
+    cursor: pointer;
+    pointer-events: none;
+    text-transform: uppercase;
+}
+.dropdown-button--link, .about{
+    text-decoration: none;
+}
+.dropdown-button--link::after, .dropdown-button::after {
+    position: absolute;
+    top: 5px;
+    right: -5px;
+    width: 5px;
+    height: 5px;
+    border: 2px solid #ffc709;
+    border-top: 0;
+    border-left: 0;
+    content: "";
+    font-size: 1.5rem;
+    transform: rotate(-45deg);
+    transform-origin: 20% 50%;
+    margin-top: 3px;
+}
+.content-2 h2{
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.content-2 p{
+    font-size: 20px;
+    color: #9a9a9a;
+    text-align: center;
+}
+.content-2{
+    margin: 120px 0;
+}
+.content-2 strong{
+    color: var(--bg-color);
+}
+.col-3{
+    width: 33.3%;
+    float: left;
+    position: relative;
+    text-align: center;
+}
+.about{
+    text-align: left;
+}
+.card1 {
+    transition: 0.3s;
+    width: 40%;
+    border-radius: 5px;
+    background-color: var(--bg-faded-color);
+    color: white;
+    text-decoration: none;
+}
+
+.card1:hover {
+    color: var(--primary-color);
+    background-color: white;
+    color: var(--bg-color);
+}
+
+.card1 img {
+    border-radius: 5px 5px 0 0;
+    width: 120px;
+    height: 125px;
+    object-fit: contain;
+}
+
+.container1 {
+    padding: 2px 16px;
+}
+.box-1{
+    background-color: var(--bg-color);
+    margin: 0 auto;
+    position: relative;
+}
+.box-2{
+    height: 500px;
+}
+.box-3{
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    margin: 0 auto;
+    align-items: center;
+    background-color: var(--bg-faded-color);
+}
+.box-3 h2{
+    font-size: 48px;
+    margin: 0 auto;
+    color: var(--primary-color);
+}
+.box-3 p{
+    margin: 24px 0 64px;
+    font-size: 20px;
+    color: var(--primary-color);
+}
+.content-3{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    margin: 0 auto;
+    position: relative;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    margin: 128px 0px;
+}
+
+.cards-3{
+    display: flex;
+    gap: 32px;
+    width: 72%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-flow: row wrap;
+    -webkit-box-pack: center;
+    justify-content: center;
+    border-radius: 5px 5px 0px 0px;
+}
+.card-3{
+    border-radius: 15px 15px 5px 5px;
+    background-color: var(--bg-color);
+    text-decoration: none;
+    color: white;
+}
+.card-3 .container{
+    margin: 24px;
+}
+.card-3 h3{
+    font-size: 24px;
+}
+.card-3 p{
+    margin: 8px 0px 16px;
+    font-size: 16px;
+}
+.card-3:hover{
+    background-color: white;
+    color: black;
+}
+.card-3:hover p{
+    color: black;
+}
+.card-3 img{
+    width: 440px;
+    height: 286px;
+    object-fit: contain;
+    border-radius: 5px 5px 0px 0px;
+}
+footer{
+    text-align: center;
+    background-color: var(--border-color);
+    color: #ffc709;
+}
