@@ -1,3 +1,6 @@
+*{
+    font-family: 'SF Pro Display Semibold', sans-serif;
+}
 :root{
     --primary-color: #fff;
     --primary-subtle-color: #999;
@@ -9,7 +12,6 @@ body{
     width: 100%;
     height: 100%;
     margin: 0 auto;
-    
 }
 ul{
     padding: 0px!important;
@@ -84,15 +86,21 @@ main, .content{
     transform-origin: 20% 50%;
     margin-top: 3px;
 }
+.box-2{
+    height: 100vh;
+}
 .content-2 h2{
-    font-size: 30px;
+    font-size: 48px;
     text-transform: uppercase;
     text-align: center;
+    line-height: 52.8px;
+    color: #121212;
 }
 .content-2 p{
     font-size: 20px;
-    color: #9a9a9a;
     text-align: center;
+    line-height: 30px;
+    color: #1f1f1f;
 }
 .content-2{
     margin: 120px 0;
@@ -105,6 +113,14 @@ main, .content{
     float: left;
     position: relative;
     text-align: center;
+}
+.col-3 h3{
+    font-size: 24px;
+    line-height: 26.4px;
+}
+.col-3 p{
+    font-size: 16px;
+    line-height: 24px;
 }
 .about{
     text-align: left;
@@ -155,7 +171,6 @@ main, .content{
     box-sizing: border-box;
     outline: none;
     display: block;
-    vertical-align: middle;
     cursor: pointer;
     min-width: 108px;
     height: 48px;
@@ -210,9 +225,6 @@ main, .content{
     background-color: var(--bg-color);
     margin: 0 auto;
     position: relative;
-}
-.box-2{
-    height: 500px;
 }
 .box-3{
     display: flex;
