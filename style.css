@@ -27,6 +27,7 @@ nav{
     height: 70px;
     width: 100%;
     background-color: #252323;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0,2);
 }
 nav .menu-dropdown{
     max-width: 1250px;
@@ -73,20 +74,40 @@ nav .menu-dropdown .menu-links .links li .arrow{
     transition: all 0.3s ease;
 }
 nav .menu-dropdown .menu-links .links li:hover .arrow1,
-nav .menu-dropdown .menu-links .links li:hover .arrow2{
+nav .menu-dropdown .menu-links .links li:hover .arrow2,
+nav .menu-dropdown .menu-links .links li:hover .arrow3{
     transform: rotate(90deg);
 }
 nav .menu-dropdown .menu-links .links .sub-menu{
     position: absolute;
     top: 35px;
-    left: 20px;
+    left: 0;
     background-color: #252323;
     line-height: 40px;
+    overflow: auto;
+    white-space: nowrap;
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0 1px 2px rgba(255, 255, 255, 0,2);
+    display: none;
+}
+nav .menu-dropdown .menu-links .links .sub-menu li{
+    padding: 0 45px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0,1);
+    color: rgba(255, 255, 255, 0.5);
 }
 nav .menu-dropdown .menu-links .links .sub-menu li a{
+    color: #fff;
     font-size: 15px;
     font: 500;
+}
+nav .menu-dropdown .menu-links .links li:hover a{
+    text-decoration: 2px solid #ffc709;
 
+}
+nav .menu-dropdown .menu-links .links li:hover .sub-menu1,
+nav .menu-dropdown .menu-links .links li:hover .sub-menu2,
+nav .menu-dropdown .menu-links .links li:hover .sub-menu3{
+    display: block;
 }
 
 /*.menu-1{
