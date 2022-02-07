@@ -46,6 +46,9 @@ nav .menu-dropdown{
     justify-content: left;
     padding: 0 20px;
 }
+.menu-dropdown .bx-menu{
+    display: none;
+}
 nav .menu-dropdown .menu-links{
     height: 100%;
     line-height: 35px;
@@ -187,6 +190,12 @@ main, .content{
 }*/
 .box-2{
     height: 90vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
 }
 .content-2 h2{
     font-size: 48px;
@@ -203,23 +212,50 @@ main, .content{
 }
 .content-2{
     margin: 120px 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
 }
 .content-2 strong{
     color: var(--bg-color);
 }
-.col-3{
-    width: 33.3%;
-    float: left;
+.cards-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 80px;
+}
+.card2 img{
+    height: 160px;
+    width: 160px;
+}
+.card2{
+    width: 20%;
     position: relative;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
-.col-3 h3{
+.card2 h3{
     font-size: 24px;
     line-height: 26.4px;
 }
-.col-3 p{
+.card2 p{
     font-size: 16px;
     line-height: 24px;
+    text-align: left;
+    margin: 0 50px;
 }
 .about{
     text-align: left;
@@ -229,9 +265,15 @@ main, .content{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
 }
 .box-1{
-    height: 80vh;
+    height: 60vh;
+    width: 100%;
+    background-color: var(--bg-color);
+    margin: 0 auto;
+    position: relative;
 }
 
 .content-1{
@@ -325,11 +367,7 @@ main, .content{
 .container1 {
     padding: 2px 16px;
 }
-.box-1{
-    background-color: var(--bg-color);
-    margin: 0 auto;
-    position: relative;
-}
+
 .box-3{
     display: flex;
     flex-direction: column;
@@ -405,4 +443,104 @@ footer{
     text-align: center;
     background-color: var(--border-color);
     color: #ffc709;
+}
+
+@media (max-width:920px) {
+    nav .navbar{
+      max-width: 100%;
+      padding: 0 25px;
+    }
+  
+    nav .navbar .logo a{
+      font-size: 27px;
+    }
+    nav .navbar .links li{
+      padding: 0 10px;
+      white-space: nowrap;
+    }
+    nav .navbar .links li a{
+      font-size: 15px;
+    }
+}
+@media (max-width:800px){
+    nav{
+      /* position: relative; */
+    }
+    .menu-dropdown .bx-menu{
+      display: block;
+    }
+    nav .menu-dropdown .menu-links{
+      position: fixed;
+      top: 0;
+      left: -100%;
+      display: block;
+      max-width: 270px;
+      width: 100%;
+      background:  #252323;
+      line-height: 40px;
+      padding: 20px;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+      transition: all 0.5s ease;
+      z-index: 1000;
+    }
+    .menu-dropdown .menu-links .sidebar-logo{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .sidebar-logo .logo-name{
+      font-size: 25px;
+      color: #fff;
+    }
+      .sidebar-logo  i,
+      .menu-dropdown .bx-menu{
+        font-size: 25px;
+        color: #fff;
+      }
+    nav .menu-dropdown .links{
+      display: block;
+      margin-top: 20px;
+    }
+    nav .menu-dropdown .links li .arrow{
+      line-height: 40px;
+    }
+    nav .menu-dropdown .links li{
+      display: block;
+    }
+    nav .menu-dropdown .links li .sub-menu{
+    position: relative;
+    top: 0;
+    box-shadow: none;
+    display: none;
+    }
+    nav .menu-dropdown .links li .sub-menu li{
+        border-bottom: none;
+    
+    }
+    .links li:hover .arrow1,
+    .links li:hover .arrow2{
+    transform: rotate(0deg);
+    }
+
+    nav .menu-dropdown .links li:hover .htmlCss-sub-menu,
+    nav .menu-dropdown .links li:hover .js-sub-menu{
+        display: none;
+    }
+    .menu-dropdown .menu-links.show1 .links .htmlCss-sub-menu,
+    .menu-dropdown .menu-links.show3 .links .js-sub-menu,
+    .menu-dropdown .menu-links.show2 .links .more .more-sub-menu{
+        display: block;
+    }
+    .menu-dropdown .menu-links.show1 .links .arrow1,
+    .menu-dropdown .menu-links.show3 .links .arrow2{
+        transform: rotate(180deg);
+    }
+        .menu-dropdown .menu-links.show2 .links .more-arrow{
+        transform: rotate(90deg);
+    }
+}
+@media (max-width:370px){
+nav .menu-dropdown .menu-links{
+max-width: 100%;
+} 
 }
