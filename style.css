@@ -46,7 +46,8 @@ nav .menu-dropdown{
     justify-content: left;
     padding: 0 20px;
 }
-.menu-dropdown .bx-menu{
+.menu-dropdown .bx-menu,
+.sidebar-name{
     display: none;
 }
 nav .menu-dropdown .menu-links{
@@ -189,7 +190,7 @@ main, .content{
     margin-top: 3px;
 }*/
 .box-2{
-    height: 90vh;
+    min-height: 90vh;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -255,7 +256,7 @@ main, .content{
     font-size: 16px;
     line-height: 24px;
     text-align: left;
-    margin: 0 50px;
+    margin: 0 20px;
 }
 .about{
     text-align: left;
@@ -269,7 +270,7 @@ main, .content{
     align-content: center;
 }
 .box-1{
-    height: 60vh;
+    height: 100%;
     width: 100%;
     background-color: var(--bg-color);
     margin: 0 auto;
@@ -279,14 +280,14 @@ main, .content{
 .content-1{
     display: flex;
     flex-wrap: wrap;
-    width: 1000px;
+    width: 78%;
     flex-direction: row;
     align-items: center;
-    padding-top: 85px;
-    padding-bottom: 0px;
+    padding-top: 72px;
+    padding-bottom: 20px;
     margin: 0 ;
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 .content-1 > div{
     flex: 1 1 500px;
@@ -488,15 +489,13 @@ footer{
       align-items: center;
       justify-content: space-between;
     }
-    .sidebar-logo .logo-name{
+    .sidebar-logo .logo-name,
+    .sidebar-logo  i,
+    .menu-dropdown .bx-menu{
       font-size: 25px;
       color: #fff;
     }
-      .sidebar-logo  i,
-      .menu-dropdown .bx-menu{
-        font-size: 25px;
-        color: #fff;
-      }
+    
     nav .menu-dropdown .links{
       display: block;
       margin-top: 20px;
