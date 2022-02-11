@@ -46,8 +46,8 @@ nav .menu-dropdown{
     justify-content: left;
     padding: 0 20px;
 }
-.menu-dropdown .bx-menu,
-.sidebar-name{
+.menu-links .sidebar-logo .bx-x,
+.menu-dropdown .bx-menu{
     display: none;
 }
 nav .menu-dropdown .menu-links{
@@ -475,9 +475,9 @@ footer{
     }
     nav .menu-dropdown .menu-links{
       position: fixed;
+      display: block;
       top: 0;
       left: -100%;
-      display: block;
       max-width: 270px;
       width: 100%;
       background:  #252323;
@@ -485,20 +485,22 @@ footer{
       padding: 20px;
       box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
       transition: all 0.5s ease;
-      z-index: 1000;
+      z-index: 2;
     }
     .menu-dropdown .menu-links .sidebar-logo{
       display: flex;
       align-items: center;
       justify-content: space-between;
     }
-    .sidebar-logo .logo-name,
-    .sidebar-logo  i,
+    .menu-links .sidebar-logo .bx-x,
     .menu-dropdown .bx-menu{
       font-size: 25px;
       color: #fff;
     }
-    
+    .menu-links .sidebar-logo .bx-x,
+    .menu-dropdown .bx-menu{
+      display: block;
+    }
     nav .menu-dropdown .links{
       display: block;
       margin-top: 20px;
