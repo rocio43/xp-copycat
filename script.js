@@ -1,5 +1,5 @@
 // sidebar open close js code
-let menuOpenBtn = document.querySelector(".menu-dropdown .bx-menu");
+let menuOpenBtn = document.querySelector(".menudropdown .bx-menu");
 let menuCloseBtn = document.querySelector(".menu-links .bx-x");
 let menuLinks = document.querySelector(".menu-links");
 menuOpenBtn.onclick = function() {
@@ -17,5 +17,5 @@ arrow1.onclick = function() {
 }
 let arrow2 = document.querySelector(".arrow2");
 arrow2.onclick = function() {
-    menuLinks.classList.toggle("show3");
+    menuLinks.classList.toggle("show2");
 }
